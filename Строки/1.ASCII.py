@@ -4,5 +4,4 @@ def print_ascii_table():
             print()
         print(f"{i:3}:{chr(i)}", end=" ")
     print()
-
-print_ascii_table()
+#123
