@@ -1,6 +1,7 @@
 import random
 import devs
 
+
 def flip_vertical(matrix):
     n = len(matrix)
     for row in matrix:
@@ -13,8 +14,7 @@ def flip_vertical(matrix):
 
 
 N = int(input("N="))
-M = int(input("M="))
-matrix = devs.matrix_create(N, M)
+matrix = devs.matrix_create(N, N)
 
 print("Исходная матрица:")
 for row in matrix:
