@@ -1,3 +1,5 @@
+import random
+import math
 def sr_kvd(n):
     sr = sum(n) / 5
     s = 0
@@ -99,3 +101,8 @@ def bubble_sort_letters(s):
             if chars[j] > chars[j + 1]:
                 chars[j], chars[j + 1] = chars[j + 1], chars[j]
     return ''.join(chars)
+
+
+def matrix_create(N, M):
+    matrix = [[random.randint(1, 9) for _ in range(N)] for _ in range(M)]
+    return matrix
