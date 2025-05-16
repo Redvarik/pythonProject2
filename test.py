@@ -1,8 +1,13 @@
-import dis
+import random
+c = set()
 
-def swap():
-    row = [5, 2, 9]
-    left, right = 0, 2
-    row[left], row[right] = row[right], row[left]
-
-dis.dis(swap)
+for n in range(1, 100):
+    n2 = bin(n)[2:]
+    if n2.count("1") % 2 == 0:
+        n2 += "00"
+    else:
+        n2 += "10"
+    r = int(n2, 2)
+    if r > 97:
+        c.add(r)
+print(min(c))
